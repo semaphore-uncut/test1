@@ -8,12 +8,15 @@ agent:
 blocks:
   - name: "Build"
     task:
+      secrets:
+        - name: test1
       env_vars:
         - name: APP_ENV
           value: prod
       jobs:
       - name: Docker build
         commands:
+          - echo $A
           - checkout
           - ls -1
           - echo $APP_ENV

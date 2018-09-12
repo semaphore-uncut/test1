@@ -9,7 +9,7 @@ blocks:
   - name: "Build"
     task:
       secrets:
-        - name: test1
+        - name: test3
       env_vars:
         - name: APP_ENV
           value: prod

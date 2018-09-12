@@ -16,6 +16,7 @@ blocks:
       jobs:
       - name: Docker build
         commands:
+          - cat myfile.txt
           - echo $A
           - checkout
           - ls -1
